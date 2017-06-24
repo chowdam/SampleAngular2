@@ -1,6 +1,6 @@
 <html>
 
-  <head>
+<head>
     <title>Angular 2 QuickStart</title>
 
     <!-- 1. Load libraries -->
@@ -15,23 +15,25 @@
 
     <!-- 2. Configure SystemJS -->
     <script>
-      System.config({
-        packages: {        
-          app: {
-            format: 'register',
-            defaultExtension: 'js'
-          }
-        }
-      });
-      System.import('app/boot')
+        System.config({
+            packages: {
+                app: {
+                    format: 'register',
+                    defaultExtension: 'js'
+                }
+            }
+        });
+        System.import('app/boot')
             .then(null, console.error.bind(console));
     </script>
 
-  </head>
+</head>
 
-  <!-- 3. Display the application -->
-  <body>
+<!-- 3. Display the application -->
+
+<body>
     <my-app>Loading...</my-app>
-  </body>
+
+</body>
 
 </html>

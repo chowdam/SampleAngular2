@@ -1,0 +1,7 @@
+{
+    "name": "Launch localhost",
+    "type": "firefox",
+    "request": "launch",
+    "url": "http://localhost:3008/",
+    "webRoot": "${workspaceRoot}"
+}
