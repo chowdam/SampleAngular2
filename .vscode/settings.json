@@ -1,5 +1,10 @@
 // Place your settings in this file to overwrite default and user settings.
 {
-    "editor.fontSize": 14
-    
+    "editor.fontSize": 14,
+    "editor.tabCompletion": true,
+    "editor.tabSize": 4,
+    "files.autoSave": "afterDelay",
+    "files.encoding": "utf8",
+    "files.eol": "\r\n",
+    "explorer.openEditors.visible": 9,
 }

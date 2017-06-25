@@ -1,7 +1,6 @@
-import {Component} from 'angular2/core';
+import { Component } from '@angular/core';
 import {CourseService} from "./course.service";
-import {AutoGrowDirective} from  "./auto-grow.directive";
-
+import {AutoGrowDirective} from './auto-grow.directive'
 
 @Component({
     selector: 'courses',
@@ -10,12 +9,11 @@ import {AutoGrowDirective} from  "./auto-grow.directive";
         {{title}}
         <input type="text" autoGrow />
         <ul>
-           <li *ngFor="#course of courses">
+           <li *ngFor='let course of courses'>
             {{course}}
            </li>
         </ul>
         `,
-        providers: [CourseService],
         directives: [AutoGrowDirective]
 })
 

@@ -10,21 +10,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var author_service_1 = require("./author.service");
-var AuthorsComponent = (function () {
-    function AuthorsComponent(authorService) {
-        this.title = "Title for Authors";
-        this.authors = authorService.getAuthors();
+var messages_service_1 = require("./messages.service");
+var MessagesComponent = (function () {
+    function MessagesComponent(messagesService) {
+        this.messages = messagesService.getMessages();
     }
-    return AuthorsComponent;
+    return MessagesComponent;
 }());
-AuthorsComponent = __decorate([
+MessagesComponent = __decorate([
     core_1.Component({
-        selector: "authors",
-        template: "\n  <h2>Authors</h2>\n\n        {{title}}\n        <ul>\n\n            <li *ngFor=\"let author of authors\">\n            {{author}}\n           </li>\n        </ul>\n\n\n",
-        providers: [author_service_1.AuthorService]
+        selector: "messages",
+        template: "\n  <h1>Messages</h1>\n  <ul>\n    <li *ngFor='let m of messages'>{{m}}\n\n    </li>\n  </ul>\n  "
     }),
-    __metadata("design:paramtypes", [author_service_1.AuthorService])
-], AuthorsComponent);
-exports.AuthorsComponent = AuthorsComponent;
-//# sourceMappingURL=authors.component.js.map
+    __metadata("design:paramtypes", [messages_service_1.MessagesService])
+], MessagesComponent);
+exports.MessagesComponent = MessagesComponent;
+//# sourceMappingURL=messages.component.js.map
